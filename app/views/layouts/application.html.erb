@@ -18,18 +18,18 @@
 
   <!-- Home screen icon  Mathias Bynens http://goo.gl/6nVq0 -->
   <!-- For iPhone 4 with high-resolution Retina display: -->
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/h/apple-touch-icon.png">
   <!-- For first-generation iPad: -->
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/m/apple-touch-icon.png">
   <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-  <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="/images/l/apple-touch-icon-precomposed.png">
   <!-- For nokia devices: -->
-  <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/images/l/apple-touch-icon.png">
 
   <!--iOS web app, deletable if not needed -->
   <!--<meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <link rel="apple-touch-startup-image" href="img/l/splash.png">-->
+  <link rel="apple-touch-startup-image" href="/images/l/splash.png">-->
 
   <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
   <meta http-equiv="cleartype" content="on">
@@ -42,9 +42,9 @@
   <%= csrf_meta_tags %>
 
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-  <script src="js/libs/modernizr-custom.js"></script>
+  <script src="/assets/modernizr-custom.js"></script>
   <!-- Media Queries Polyfill https://github.com/shichuan/mobile-html5-boilerplate/wiki/Media-Queries-Polyfill -->
-  <script>Modernizr.mq('(min-width:0)') || document.write("<script src='js/libs/respond.min.js'>\x3C/script>")</script>
+  <script>Modernizr.mq('(min-width:0)') || document.write("<script src='/assets/respond.js'>\x3C/script>")</script>
 </head>
 
 <body>
@@ -63,14 +63,11 @@
   </div> <!--! end of #container -->
 
 
-  <!-- JavaScript at the bottom for fast page loading -->
-
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.2.min.js'>\x3C/script>")</script>
 
   <!-- scripts concatenated and minified via ant build script -->
-  <script src="js/mylibs/helper.js"></script>
+  <script src="/assets/helpers/mobile.js"></script>
   <!-- end concatenated and minified scripts-->
 
   <script>
