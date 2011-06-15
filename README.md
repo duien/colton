@@ -11,4 +11,4 @@
 Trustworthy.
 
 ## License ##
-MIT. See [LICENSE](colton/LICENSE).
+MIT. See [LICENSE](colton/blob/master/LICENSE).
