@@ -1,4 +1,4 @@
-== What ==
+## What ##
 * Rails
 * MongoDB
 * HTML5 Boilerplate + Mobile
@@ -7,8 +7,8 @@
 * Test::Unit
 * Nginx conf
 
-== What Does the "T" Stand For? ==
+## What Does the "T" Stand For? ##
 Trustworthy.
 
-== License ==
-MIT. See LICENSE.
+## License ##
+MIT. See [LICENSE](/LICENSE).
