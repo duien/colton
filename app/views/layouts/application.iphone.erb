@@ -18,11 +18,11 @@
 
   <!-- Home screen icon  Mathias Bynens http://goo.gl/6nVq0 -->
   <!-- For iPhone 4 with high-resolution Retina display: -->
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/h/apple-touch-icon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/h/apple-touch-icon-114x114-precomposed.png">
   <!-- For first-generation iPad: -->
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/m/apple-touch-icon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/m/apple-touch-icon-72x72-precomposed.png">
   <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-  <link rel="apple-touch-icon-precomposed" href="/images/l/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="/images/l/apple-touch-icon-57x57-precomposed.png">
   <!-- For nokia devices: -->
   <link rel="shortcut icon" href="/images/l/apple-touch-icon.png">
 
@@ -37,46 +37,40 @@
   <!-- more tags for your 'head' to consider https://gist.github.com/849231 -->
 
   <!-- Main Stylesheet -->
-  <%= stylesheet_link_tag    "application" %>
+  <link rel="stylesheet" href="/stylesheets/mobile/style.css?v=1">
+  <%= stylesheet_link_tag "application" %>
 
+  <!-- Cross Site Request Forgery protection -->
   <%= csrf_meta_tags %>
 
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-  <script src="/assets/modernizr-custom.js"></script>
+  <script src="/assets/modernizr-2.0.min.js"></script>
   <!-- Media Queries Polyfill https://github.com/shichuan/mobile-html5-boilerplate/wiki/Media-Queries-Polyfill -->
-  <script>Modernizr.mq('(min-width:0)') || document.write("<script src='/assets/respond.js'>\x3C/script>")</script>
+  <script>Modernizr.mq('(min-width:0)') || document.write("<script src='/assets/respond.min.js'>\x3C/script>")</script>
 </head>
 
 <body>
 
   <div id="container">
     <header>
-		<%= @is_mobile_device %>
+
     </header>
     <div id="main" role="main">
-		<%= yield %>
+	  <%= yield %>
     </div>
+
     <footer>
+
     </footer>
   </div> <!--! end of #container -->
 
-
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-
-  <!-- scripts concatenated and minified via ant build script -->
+  <!-- JavaScript at the bottom for fast page loading -->
   <script src="/assets/helpers/mobile.js"></script>
-  <!-- end concatenated and minified scripts-->
-
+  <%= javascript_include_tag "application" %>
   <script>
     // iPhone Scale Bug Fix, read this when using http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
     MBP.scaleFix();
   </script>
-
-  <%= javascript_include_tag "application" %>
-
-  <!-- Debugger - remove for production -->
-  <!-- <script src="https://getfirebug.com/firebug-lite.js"></script> -->
 
   <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
   <script>
