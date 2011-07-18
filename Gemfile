@@ -1,20 +1,15 @@
 source 'http://rubygems.org'
 
-# Rails
-gem 'rails', '3.1.0.rc4'
-gem 'sass-rails', '~> 3.1.0.rc'
-gem 'coffee-script'
-gem 'uglifier'
-gem 'jquery-rails'
-gem 'rack-mobile-detect'
-
-# Database
 gem 'bson_ext'
-gem 'mongoid', '>= 2.0.0.beta.19'
-
-# Authentication
+gem 'coffee-script'
 gem 'devise'
+gem 'jquery-rails'
+gem 'mongoid'
 gem 'omniauth'
+gem 'rack-mobile-detect'
+gem 'rails', '>=3.1.0.rc4'
+gem 'sass-rails', '>=3.1.0.rc.4'
+gem 'uglifier'
 
 # Groups
 group :test do
