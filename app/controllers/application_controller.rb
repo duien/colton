@@ -6,11 +6,11 @@ class ApplicationController < ActionController::Base
   private
   
   def set_request_format
-    #if is_mobile_device?
+    if is_mobile_device?
       # Future support for device specific formats
       #request.format = @mobile_device.downcase.to_sym
       request.format = :iphone
-    #end
+    end
   end
   
   def is_mobile_device?
